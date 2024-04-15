@@ -26,20 +26,18 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-benchmarkme
     - r-catools
     - r-doparallel
     - r-foreach
-    - r-memuse
+    - r-pbmcapply
     - r-pracma
     - r-twosamples
   run:
     - r-base
-    - r-benchmarkme
     - r-catools
     - r-doparallel
     - r-foreach
-    - r-memuse
+    - r-pbmcapply
     - r-pracma
     - r-twosamples
 
