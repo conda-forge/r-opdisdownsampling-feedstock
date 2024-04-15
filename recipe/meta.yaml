@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opdisDownsampling_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opdisDownsampling/opdisDownsampling_{{ version }}.tar.gz
-  sha256: 9db747ae66fb17f2f7938039bd128cdd07ee2126e75a7a2d60317a5d3c7c072b
+  sha256: 54824939fd62f06f53ca642793f36dd1f3bcc9e45ea825596bdaab01d17295ad
 
 build:
   merge_build_host: true  # [win]
@@ -26,20 +26,18 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-benchmarkme
     - r-catools
     - r-doparallel
     - r-foreach
-    - r-memuse
+    - r-pbmcapply
     - r-pracma
     - r-twosamples
   run:
     - r-base
-    - r-benchmarkme
     - r-catools
     - r-doparallel
     - r-foreach
-    - r-memuse
+    - r-pbmcapply
     - r-pracma
     - r-twosamples
 
