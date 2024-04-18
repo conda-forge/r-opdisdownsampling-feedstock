@@ -1,4 +1,4 @@
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opdisDownsampling_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opdisDownsampling/opdisDownsampling_{{ version }}.tar.gz
-  sha256: 54824939fd62f06f53ca642793f36dd1f3bcc9e45ea825596bdaab01d17295ad
+  sha256: 74ea3d1585755080fed2e92555f5648cb44b639f9177ee7866ed77e70ed22683
 
 build:
   merge_build_host: true  # [win]
