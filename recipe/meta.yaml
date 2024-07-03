@@ -1,6 +1,5 @@
 {% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-opdisdownsampling
@@ -13,8 +12,7 @@ source:
   sha256: 74ea3d1585755080fed2e92555f5648cb44b639f9177ee7866ed77e70ed22683
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
