@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opdisDownsampling_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opdisDownsampling/opdisDownsampling_{{ version }}.tar.gz
-  sha256: 74ea3d1585755080fed2e92555f5648cb44b639f9177ee7866ed77e70ed22683
+  sha256: ccf6e2c480f5c77549e77b6d410d8ec93902a7496c0c21eb0630364851b27949
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
