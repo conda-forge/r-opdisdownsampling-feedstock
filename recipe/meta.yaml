@@ -3,7 +3,7 @@
 
 package:
   name: r-opdisdownsampling
-  version: {{ version|replace("-", "_") }}
+  version: "{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -13,7 +13,6 @@ source:
 
 build:
   number: 0
-  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
