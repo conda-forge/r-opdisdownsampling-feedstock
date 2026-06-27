@@ -3,11 +3,11 @@ About r-opdisdownsampling-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-opdisdownsampling-feedstock/blob/main/LICENSE.txt)
 
-Home: https://cran.r-project.org/package=opdisDownsampling
+Home: https://github.com/JornLotsch/opdisDownsampling
 
 Package license: GPL-3.0-only
 
-Summary: An optimized method for distribution-preserving class-proportional down-sampling of bio-medical data.
+Summary: An optimized method for distribution-preserving class-proportional down-sampling of bio-medical data <doi:10.1371/journal.pone.0255838>.
 
 Current build status
 ====================
