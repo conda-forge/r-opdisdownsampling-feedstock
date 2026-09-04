@@ -1,15 +1,15 @@
-{% set version = "1.6" %}
+{% set version = "1.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-opdisdownsampling
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/opdisDownsampling_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opdisDownsampling/opdisDownsampling_{{ version }}.tar.gz
-  sha256: ccf6e2c480f5c77549e77b6d410d8ec93902a7496c0c21eb0630364851b27949
+  sha256: 81b68ec7c54255d7ecf5350bfa8cd7806ba2b7d79e179224523bcf7771857d7d
 
 build:
   number: 0
@@ -62,8 +62,7 @@ test:
 about:
   home: https://github.com/JornLotsch/opdisDownsampling
   license: GPL-3.0-only
-  summary: An optimized method for distribution-preserving class-proportional down-sampling of
-    bio-medical data <doi:10.1371/journal.pone.0255838>.
+  summary: An optimized method for distribution-preserving class-proportional down-sampling of bio-medical data <doi:10.1371/journal.pone.0255838>.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
